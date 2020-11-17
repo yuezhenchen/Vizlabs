@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+        }
+    .button-black {
+    background-color: #BA8400;
+    border-color: #BA8400;
+    color:#7C5100;
+    }
+    .button-black.button-clear,
+    .button-black.button-outline {
+    background-color: transparent;
+    color: #7C5100;
+    }
+    .button-black.button-clear {
+    border-color: transparent;
+    }
+    </style>
+    <style src="style.css"></style>
+    <script type="text/javascript" src="https://d3js.org/d3.v6.min.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">  
+        <div class = "row">
+            <h2>
+                Coffee House Chains
+            </h2>
+        </div>
+        <div class = "row">
+            <h6>
+                A ranking of selected leading coffee house chains worldwide.
+            </h6>
+        </div>  
+        <div class = "row">
+            <div class = "column" >
+                <div class = "row">
+                    <label for="group-by">Group By</label>
+                
+                    <select id="group-by">
+                        <option value="stores">Stores worldwide</option>
+                        <option value="revenue">Revenue in billion U.S. dollars</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class = "column">
+                <button class="button-small button-outline button-black" id="sort">
+                    Sort
+                </button>
+            </div>
+        </div>
+        <div class = "row">
+            <div class ="column">
+                <div class="chart">
+
+                </div>
+            </div>
+        </div>    
+</body>
+</html>
